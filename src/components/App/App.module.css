@@ -1,0 +1,16 @@
+.wrap {
+    margin: auto;
+    width: 40%;
+    display: grid;
+    grid-template-areas: 'panel ... content content' ;
+}
+.panel {
+    grid-area: panel;
+}
+.content {
+    grid-area: content;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
