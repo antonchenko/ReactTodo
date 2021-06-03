@@ -40,7 +40,7 @@ componentDidMount () {
 
         return (
          <CardContent>
-            <h1 classNane={styles.word}>{isLoading ? <CircularProgress color="secondary" /> : 'Mine repositories'}</h1>
+            <h1 className={styles.word}>{isLoading ? <CircularProgress color="secondary" /> : 'Mine repositories'}</h1>
             {!isLoading &&
             <div>
                 {!userInfo ? 'there is not such repository' + isError :
