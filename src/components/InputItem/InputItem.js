@@ -7,14 +7,14 @@ class InputItem extends React.Component {
   state = {
     inputValue: '',
     errorStatus: false,
-    helperText: ' ',
+    helperText: '',
   };
 
   onButtonClick = () => {
     this.setState({
       inputValue: '',
       errorStatus: false,
-      helperText: ' ',
+      helperText: '',
     });
 
     if (this.state.inputValue && this.state.inputValue.length < 20) {
@@ -25,7 +25,7 @@ class InputItem extends React.Component {
         helperText: 'The field must not be empity or you exceeded the simbol limit',
       });
     }
-  } 
+  }  
 
  render() {
 
